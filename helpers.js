@@ -7,15 +7,12 @@ $('#main_header').click(function() {
 		});
 });
 
-
-// function set_paragraph(msg) {
-// 	p = $("#p-1");
-// 	p.html(msg)
-// }
-
 function set_content_in_divs(paragraphs) {
   $.each(paragraphs, function(i, d) {
     p = $("#p-" + i)
     p.html("<p>" + d + "</p>")
 });
-}
+};
+var now = new Date();
+d = $('#currentdate')
+d.html(now.getFullYear() + "-" + (now.getMonth()+1) + "-" + now.getDate())
